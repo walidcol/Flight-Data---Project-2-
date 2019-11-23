@@ -320,7 +320,7 @@ GROUP BY airline</code></pre>
         });
     }
     async function makeAirlinesDelaysPlot() {
-        const data = (await d3.json('data/airlines_delays.json'))
+        const data = (await d3.json('airlines_delays.json'))
             .map(it => ({name: it.airline, value: it.delay_rate * 100, size: it.flights_count}));
         const svg = d3.select('#airlinesDelaysPlot');
         const width = Number(svg.attr('width'));
