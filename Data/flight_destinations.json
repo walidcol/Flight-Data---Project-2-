@@ -1,0 +1,1254 @@
+[
+  {
+    "count": 41995,
+    "destination_airport": "ATL"
+  },
+  {
+    "count": 33392,
+    "destination_airport": "ORD"
+  },
+  {
+    "count": 32765,
+    "destination_airport": "DFW"
+  },
+  {
+    "count": 24462,
+    "destination_airport": "LAX"
+  },
+  {
+    "count": 24022,
+    "destination_airport": "DEN"
+  },
+  {
+    "count": 18985,
+    "destination_airport": "IAH"
+  },
+  {
+    "count": 18536,
+    "destination_airport": "PHX"
+  },
+  {
+    "count": 18159,
+    "destination_airport": "SFO"
+  },
+  {
+    "count": 16419,
+    "destination_airport": "LAS"
+  },
+  {
+    "count": 14167,
+    "destination_airport": "MCO"
+  },
+  {
+    "count": 13671,
+    "destination_airport": "LGA"
+  },
+  {
+    "count": 13514,
+    "destination_airport": "DTW"
+  },
+  {
+    "count": 13188,
+    "destination_airport": "CLT"
+  },
+  {
+    "count": 12782,
+    "destination_airport": "MSP"
+  },
+  {
+    "count": 12646,
+    "destination_airport": "BOS"
+  },
+  {
+    "count": 12388,
+    "destination_airport": "EWR"
+  },
+  {
+    "count": 12189,
+    "destination_airport": "SLC"
+  },
+  {
+    "count": 11929,
+    "destination_airport": "JFK"
+  },
+  {
+    "count": 11917,
+    "destination_airport": "SEA"
+  },
+  {
+    "count": 10120,
+    "destination_airport": "FLL"
+  },
+  {
+    "count": 9744,
+    "destination_airport": "BWI"
+  },
+  {
+    "count": 9584,
+    "destination_airport": "DCA"
+  },
+  {
+    "count": 9558,
+    "destination_airport": "MDW"
+  },
+  {
+    "count": 9420,
+    "destination_airport": "MIA"
+  },
+  {
+    "count": 8576,
+    "destination_airport": "SAN"
+  },
+  {
+    "count": 8435,
+    "destination_airport": "TPA"
+  },
+  {
+    "count": 8194,
+    "destination_airport": "PHL"
+  },
+  {
+    "count": 7329,
+    "destination_airport": "DAL"
+  },
+  {
+    "count": 6602,
+    "destination_airport": "HOU"
+  },
+  {
+    "count": 5799,
+    "destination_airport": "BNA"
+  },
+  {
+    "count": 5786,
+    "destination_airport": "STL"
+  },
+  {
+    "count": 5467,
+    "destination_airport": "HNL"
+  },
+  {
+    "count": 5145,
+    "destination_airport": "OAK"
+  },
+  {
+    "count": 5112,
+    "destination_airport": "PDX"
+  },
+  {
+    "count": 5110,
+    "destination_airport": "IAD"
+  },
+  {
+    "count": 4777,
+    "destination_airport": "AUS"
+  },
+  {
+    "count": 4757,
+    "destination_airport": "MSY"
+  },
+  {
+    "count": 4741,
+    "destination_airport": "SJC"
+  },
+  {
+    "count": 4572,
+    "destination_airport": "SMF"
+  },
+  {
+    "count": 4566,
+    "destination_airport": "MCI"
+  },
+  {
+    "count": 4527,
+    "destination_airport": "SNA"
+  },
+  {
+    "count": 4407,
+    "destination_airport": "RSW"
+  },
+  {
+    "count": 4300,
+    "destination_airport": "CLE"
+  },
+  {
+    "count": 3868,
+    "destination_airport": "RDU"
+  },
+  {
+    "count": 3651,
+    "destination_airport": "MKE"
+  },
+  {
+    "count": 3650,
+    "destination_airport": "SAT"
+  },
+  {
+    "count": 3412,
+    "destination_airport": "PBI"
+  },
+  {
+    "count": 3219,
+    "destination_airport": "SJU"
+  },
+  {
+    "count": 2968,
+    "destination_airport": "IND"
+  },
+  {
+    "count": 2955,
+    "destination_airport": "PIT"
+  },
+  {
+    "count": 2926,
+    "destination_airport": "CMH"
+  },
+  {
+    "count": 2699,
+    "destination_airport": "OGG"
+  },
+  {
+    "count": 2434,
+    "destination_airport": "CVG"
+  },
+  {
+    "count": 2412,
+    "destination_airport": "BUR"
+  },
+  {
+    "count": 2341,
+    "destination_airport": "BDL"
+  },
+  {
+    "count": 2243,
+    "destination_airport": "ONT"
+  },
+  {
+    "count": 2196,
+    "destination_airport": "ABQ"
+  },
+  {
+    "count": 2185,
+    "destination_airport": "OMA"
+  },
+  {
+    "count": 2103,
+    "destination_airport": "JAX"
+  },
+  {
+    "count": 2047,
+    "destination_airport": "TUS"
+  },
+  {
+    "count": 1948,
+    "destination_airport": "OKC"
+  },
+  {
+    "count": 1842,
+    "destination_airport": "TUL"
+  },
+  {
+    "count": 1827,
+    "destination_airport": "BUF"
+  },
+  {
+    "count": 1802,
+    "destination_airport": "RIC"
+  },
+  {
+    "count": 1751,
+    "destination_airport": "MEM"
+  },
+  {
+    "count": 1640,
+    "destination_airport": "ANC"
+  },
+  {
+    "count": 1631,
+    "destination_airport": "BHM"
+  },
+  {
+    "count": 1550,
+    "destination_airport": "PSP"
+  },
+  {
+    "count": 1532,
+    "destination_airport": "RNO"
+  },
+  {
+    "count": 1528,
+    "destination_airport": "ELP"
+  },
+  {
+    "count": 1482,
+    "destination_airport": "GRR"
+  },
+  {
+    "count": 1408,
+    "destination_airport": "PVD"
+  },
+  {
+    "count": 1397,
+    "destination_airport": "KOA"
+  },
+  {
+    "count": 1343,
+    "destination_airport": "LIH"
+  },
+  {
+    "count": 1342,
+    "destination_airport": "SDF"
+  },
+  {
+    "count": 1328,
+    "destination_airport": "BOI"
+  },
+  {
+    "count": 1301,
+    "destination_airport": "CHS"
+  },
+  {
+    "count": 1285,
+    "destination_airport": "LIT"
+  },
+  {
+    "count": 1215,
+    "destination_airport": "ORF"
+  },
+  {
+    "count": 1200,
+    "destination_airport": "DSM"
+  },
+  {
+    "count": 1179,
+    "destination_airport": "GEG"
+  },
+  {
+    "count": 1172,
+    "destination_airport": "MSN"
+  },
+  {
+    "count": 1168,
+    "destination_airport": "MAF"
+  },
+  {
+    "count": 1120,
+    "destination_airport": "DAY"
+  },
+  {
+    "count": 1093,
+    "destination_airport": "XNA"
+  },
+  {
+    "count": 1080,
+    "destination_airport": "LGB"
+  },
+  {
+    "count": 1043,
+    "destination_airport": "HPN"
+  },
+  {
+    "count": 978,
+    "destination_airport": "GSO"
+  },
+  {
+    "count": 963,
+    "destination_airport": "FAT"
+  },
+  {
+    "count": 947,
+    "destination_airport": "ICT"
+  },
+  {
+    "count": 946,
+    "destination_airport": "CID"
+  },
+  {
+    "count": 933,
+    "destination_airport": "BTR"
+  },
+  {
+    "count": 896,
+    "destination_airport": "JAN"
+  },
+  {
+    "count": 883,
+    "destination_airport": "PNS"
+  },
+  {
+    "count": 880,
+    "destination_airport": "ASE"
+  },
+  {
+    "count": 869,
+    "destination_airport": "FSD"
+  },
+  {
+    "count": 856,
+    "destination_airport": "ROC"
+  },
+  {
+    "count": 851,
+    "destination_airport": "SAV"
+  },
+  {
+    "count": 849,
+    "destination_airport": "TYS"
+  },
+  {
+    "count": 845,
+    "destination_airport": "COS"
+  },
+  {
+    "count": 838,
+    "destination_airport": "SGF"
+  },
+  {
+    "count": 797,
+    "destination_airport": "ALB"
+  },
+  {
+    "count": 791,
+    "destination_airport": "SBA"
+  },
+  {
+    "count": 790,
+    "destination_airport": "CAK"
+  },
+  {
+    "count": 781,
+    "destination_airport": "CRP"
+  },
+  {
+    "count": 778,
+    "destination_airport": "SHV"
+  },
+  {
+    "count": 771,
+    "destination_airport": "GSP"
+  },
+  {
+    "count": 755,
+    "destination_airport": "CAE"
+  },
+  {
+    "count": 745,
+    "destination_airport": "AMA"
+  },
+  {
+    "count": 715,
+    "destination_airport": "ITO"
+  },
+  {
+    "count": 706,
+    "destination_airport": "LEX"
+  },
+  {
+    "count": 697,
+    "destination_airport": "LFT"
+  },
+  {
+    "count": 679,
+    "destination_airport": "FAR"
+  },
+  {
+    "count": 671,
+    "destination_airport": "LBB"
+  },
+  {
+    "count": 661,
+    "destination_airport": "STT"
+  },
+  {
+    "count": 660,
+    "destination_airport": "MHT"
+  },
+  {
+    "count": 654,
+    "destination_airport": "SYR"
+  },
+  {
+    "count": 626,
+    "destination_airport": "MOB"
+  },
+  {
+    "count": 610,
+    "destination_airport": "MLI"
+  },
+  {
+    "count": 597,
+    "destination_airport": "HSV"
+  },
+  {
+    "count": 592,
+    "destination_airport": "SBP"
+  },
+  {
+    "count": 555,
+    "destination_airport": "SBN"
+  },
+  {
+    "count": 552,
+    "destination_airport": "GRK"
+  },
+  {
+    "count": 549,
+    "destination_airport": "FNT"
+  },
+  {
+    "count": 540,
+    "destination_airport": "VPS"
+  },
+  {
+    "count": 527,
+    "destination_airport": "MFE"
+  },
+  {
+    "count": 527,
+    "destination_airport": "ISP"
+  },
+  {
+    "count": 523,
+    "destination_airport": "GRB"
+  },
+  {
+    "count": 514,
+    "destination_airport": "PIA"
+  },
+  {
+    "count": 485,
+    "destination_airport": "JAC"
+  },
+  {
+    "count": 479,
+    "destination_airport": "ACY"
+  },
+  {
+    "count": 476,
+    "destination_airport": "GPT"
+  },
+  {
+    "count": 467,
+    "destination_airport": "TLH"
+  },
+  {
+    "count": 458,
+    "destination_airport": "EUG"
+  },
+  {
+    "count": 454,
+    "destination_airport": "CHA"
+  },
+  {
+    "count": 446,
+    "destination_airport": "BIS"
+  },
+  {
+    "count": 446,
+    "destination_airport": "MRY"
+  },
+  {
+    "count": 444,
+    "destination_airport": "SRQ"
+  },
+  {
+    "count": 444,
+    "destination_airport": "EVV"
+  },
+  {
+    "count": 430,
+    "destination_airport": "FWA"
+  },
+  {
+    "count": 427,
+    "destination_airport": "JNU"
+  },
+  {
+    "count": 418,
+    "destination_airport": "MDT"
+  },
+  {
+    "count": 418,
+    "destination_airport": "EGE"
+  },
+  {
+    "count": 405,
+    "destination_airport": "HRL"
+  },
+  {
+    "count": 401,
+    "destination_airport": "MGM"
+  },
+  {
+    "count": 400,
+    "destination_airport": "AEX"
+  },
+  {
+    "count": 384,
+    "destination_airport": "MYR"
+  },
+  {
+    "count": 383,
+    "destination_airport": "GJT"
+  },
+  {
+    "count": 364,
+    "destination_airport": "ISN"
+  },
+  {
+    "count": 356,
+    "destination_airport": "BMI"
+  },
+  {
+    "count": 356,
+    "destination_airport": "MLU"
+  },
+  {
+    "count": 340,
+    "destination_airport": "BZN"
+  },
+  {
+    "count": 337,
+    "destination_airport": "ABI"
+  },
+  {
+    "count": 337,
+    "destination_airport": "EYW"
+  },
+  {
+    "count": 335,
+    "destination_airport": "TTN"
+  },
+  {
+    "count": 329,
+    "destination_airport": "ECP"
+  },
+  {
+    "count": 324,
+    "destination_airport": "BTV"
+  },
+  {
+    "count": 323,
+    "destination_airport": "BFL"
+  },
+  {
+    "count": 320,
+    "destination_airport": "GNV"
+  },
+  {
+    "count": 319,
+    "destination_airport": "PWM"
+  },
+  {
+    "count": 317,
+    "destination_airport": "ATW"
+  },
+  {
+    "count": 312,
+    "destination_airport": "BIL"
+  },
+  {
+    "count": 306,
+    "destination_airport": "MFR"
+  },
+  {
+    "count": 295,
+    "destination_airport": "LRD"
+  },
+  {
+    "count": 294,
+    "destination_airport": "CMI"
+  },
+  {
+    "count": 293,
+    "destination_airport": "AVL"
+  },
+  {
+    "count": 291,
+    "destination_airport": "CLD"
+  },
+  {
+    "count": 290,
+    "destination_airport": "AZO"
+  },
+  {
+    "count": 290,
+    "destination_airport": "CLL"
+  },
+  {
+    "count": 287,
+    "destination_airport": "CHO"
+  },
+  {
+    "count": 287,
+    "destination_airport": "BRO"
+  },
+  {
+    "count": 286,
+    "destination_airport": "RAP"
+  },
+  {
+    "count": 283,
+    "destination_airport": "FSM"
+  },
+  {
+    "count": 281,
+    "destination_airport": "AGS"
+  },
+  {
+    "count": 280,
+    "destination_airport": "LAN"
+  },
+  {
+    "count": 280,
+    "destination_airport": "LNK"
+  },
+  {
+    "count": 278,
+    "destination_airport": "RST"
+  },
+  {
+    "count": 274,
+    "destination_airport": "TYR"
+  },
+  {
+    "count": 272,
+    "destination_airport": "TVC"
+  },
+  {
+    "count": 266,
+    "destination_airport": "DRO"
+  },
+  {
+    "count": 263,
+    "destination_airport": "KTN"
+  },
+  {
+    "count": 263,
+    "destination_airport": "IDA"
+  },
+  {
+    "count": 253,
+    "destination_airport": "PSC"
+  },
+  {
+    "count": 250,
+    "destination_airport": "CRW"
+  },
+  {
+    "count": 238,
+    "destination_airport": "YUM"
+  },
+  {
+    "count": 238,
+    "destination_airport": "MBS"
+  },
+  {
+    "count": 237,
+    "destination_airport": "ELM"
+  },
+  {
+    "count": 237,
+    "destination_airport": "MOT"
+  },
+  {
+    "count": 236,
+    "destination_airport": "TRI"
+  },
+  {
+    "count": 233,
+    "destination_airport": "MTJ"
+  },
+  {
+    "count": 232,
+    "destination_airport": "CPR"
+  },
+  {
+    "count": 232,
+    "destination_airport": "RDM"
+  },
+  {
+    "count": 227,
+    "destination_airport": "ABE"
+  },
+  {
+    "count": 226,
+    "destination_airport": "FAY"
+  },
+  {
+    "count": 219,
+    "destination_airport": "DLH"
+  },
+  {
+    "count": 217,
+    "destination_airport": "FAI"
+  },
+  {
+    "count": 215,
+    "destination_airport": "LCH"
+  },
+  {
+    "count": 214,
+    "destination_airport": "SJT"
+  },
+  {
+    "count": 213,
+    "destination_airport": "MHK"
+  },
+  {
+    "count": 210,
+    "destination_airport": "SGU"
+  },
+  {
+    "count": 209,
+    "destination_airport": "ILM"
+  },
+  {
+    "count": 208,
+    "destination_airport": "ACV"
+  },
+  {
+    "count": 208,
+    "destination_airport": "ACT"
+  },
+  {
+    "count": 208,
+    "destination_airport": "HDN"
+  },
+  {
+    "count": 203,
+    "destination_airport": "GTF"
+  },
+  {
+    "count": 203,
+    "destination_airport": "FLG"
+  },
+  {
+    "count": 202,
+    "destination_airport": "ROA"
+  },
+  {
+    "count": 191,
+    "destination_airport": "PHF"
+  },
+  {
+    "count": 182,
+    "destination_airport": "SPI"
+  },
+  {
+    "count": 180,
+    "destination_airport": "LAW"
+  },
+  {
+    "count": 179,
+    "destination_airport": "FCA"
+  },
+  {
+    "count": 178,
+    "destination_airport": "MSO"
+  },
+  {
+    "count": 174,
+    "destination_airport": "COU"
+  },
+  {
+    "count": 172,
+    "destination_airport": "LSE"
+  },
+  {
+    "count": 171,
+    "destination_airport": "CWA"
+  },
+  {
+    "count": 170,
+    "destination_airport": "ERI"
+  },
+  {
+    "count": 168,
+    "destination_airport": "DAB"
+  },
+  {
+    "count": 167,
+    "destination_airport": "MLB"
+  },
+  {
+    "count": 165,
+    "destination_airport": "DHN"
+  },
+  {
+    "count": 164,
+    "destination_airport": "SAF"
+  },
+  {
+    "count": 164,
+    "destination_airport": "AVP"
+  },
+  {
+    "count": 160,
+    "destination_airport": "OAJ"
+  },
+  {
+    "count": 158,
+    "destination_airport": "GCC"
+  },
+  {
+    "count": 155,
+    "destination_airport": "HLN"
+  },
+  {
+    "count": 155,
+    "destination_airport": "DIK"
+  },
+  {
+    "count": 151,
+    "destination_airport": "BQN"
+  },
+  {
+    "count": 148,
+    "destination_airport": "SPS"
+  },
+  {
+    "count": 145,
+    "destination_airport": "RKS"
+  },
+  {
+    "count": 136,
+    "destination_airport": "SUN"
+  },
+  {
+    "count": 132,
+    "destination_airport": "BLI"
+  },
+  {
+    "count": 132,
+    "destination_airport": "LBE"
+  },
+  {
+    "count": 131,
+    "destination_airport": "BPT"
+  },
+  {
+    "count": 131,
+    "destination_airport": "SIT"
+  },
+  {
+    "count": 129,
+    "destination_airport": "RDD"
+  },
+  {
+    "count": 126,
+    "destination_airport": "TOL"
+  },
+  {
+    "count": 126,
+    "destination_airport": "TXK"
+  },
+  {
+    "count": 126,
+    "destination_airport": "ROW"
+  },
+  {
+    "count": 125,
+    "destination_airport": "RHI"
+  },
+  {
+    "count": 125,
+    "destination_airport": "STX"
+  },
+  {
+    "count": 123,
+    "destination_airport": "VLD"
+  },
+  {
+    "count": 121,
+    "destination_airport": "DBQ"
+  },
+  {
+    "count": 121,
+    "destination_airport": "BQK"
+  },
+  {
+    "count": 120,
+    "destination_airport": "GTR"
+  },
+  {
+    "count": 119,
+    "destination_airport": "MEI"
+  },
+  {
+    "count": 117,
+    "destination_airport": "ABY"
+  },
+  {
+    "count": 117,
+    "destination_airport": "BET"
+  },
+  {
+    "count": 116,
+    "destination_airport": "CSG"
+  },
+  {
+    "count": 113,
+    "destination_airport": "BRW"
+  },
+  {
+    "count": 112,
+    "destination_airport": "SCC"
+  },
+  {
+    "count": 111,
+    "destination_airport": "HIB"
+  },
+  {
+    "count": 109,
+    "destination_airport": "JMS"
+  },
+  {
+    "count": 104,
+    "destination_airport": "GUC"
+  },
+  {
+    "count": 97,
+    "destination_airport": "PSE"
+  },
+  {
+    "count": 92,
+    "destination_airport": "SCE"
+  },
+  {
+    "count": 89,
+    "destination_airport": "SWF"
+  },
+  {
+    "count": 88,
+    "destination_airport": "PSG"
+  },
+  {
+    "count": 88,
+    "destination_airport": "ORH"
+  },
+  {
+    "count": 88,
+    "destination_airport": "MKG"
+  },
+  {
+    "count": 88,
+    "destination_airport": "WRG"
+  },
+  {
+    "count": 88,
+    "destination_airport": "BTM"
+  },
+  {
+    "count": 87,
+    "destination_airport": "ABR"
+  },
+  {
+    "count": 87,
+    "destination_airport": "OTZ"
+  },
+  {
+    "count": 87,
+    "destination_airport": "JLN"
+  },
+  {
+    "count": 87,
+    "destination_airport": "EAU"
+  },
+  {
+    "count": 87,
+    "destination_airport": "COD"
+  },
+  {
+    "count": 87,
+    "destination_airport": "TWF"
+  },
+  {
+    "count": 87,
+    "destination_airport": "BJI"
+  },
+  {
+    "count": 87,
+    "destination_airport": "GCK"
+  },
+  {
+    "count": 86,
+    "destination_airport": "PIH"
+  },
+  {
+    "count": 86,
+    "destination_airport": "OME"
+  },
+  {
+    "count": 86,
+    "destination_airport": "GRI"
+  },
+  {
+    "count": 86,
+    "destination_airport": "PAH"
+  },
+  {
+    "count": 86,
+    "destination_airport": "EKO"
+  },
+  {
+    "count": 86,
+    "destination_airport": "CEC"
+  },
+  {
+    "count": 86,
+    "destination_airport": "CDV"
+  },
+  {
+    "count": 86,
+    "destination_airport": "YAK"
+  },
+  {
+    "count": 85,
+    "destination_airport": "CMX"
+  },
+  {
+    "count": 85,
+    "destination_airport": "SMX"
+  },
+  {
+    "count": 84,
+    "destination_airport": "LAR"
+  },
+  {
+    "count": 82,
+    "destination_airport": "SUX"
+  },
+  {
+    "count": 82,
+    "destination_airport": "ALO"
+  },
+  {
+    "count": 81,
+    "destination_airport": "CIU"
+  },
+  {
+    "count": 81,
+    "destination_airport": "GFK"
+  },
+  {
+    "count": 81,
+    "destination_airport": "IMT"
+  },
+  {
+    "count": 80,
+    "destination_airport": "EWN"
+  },
+  {
+    "count": 77,
+    "destination_airport": "BRD"
+  },
+  {
+    "count": 77,
+    "destination_airport": "GGG"
+  },
+  {
+    "count": 76,
+    "destination_airport": "CDC"
+  },
+  {
+    "count": 76,
+    "destination_airport": "HYS"
+  },
+  {
+    "count": 76,
+    "destination_airport": "APN"
+  },
+  {
+    "count": 76,
+    "destination_airport": "CNY"
+  },
+  {
+    "count": 76,
+    "destination_airport": "PLN"
+  },
+  {
+    "count": 76,
+    "destination_airport": "PUB"
+  },
+  {
+    "count": 75,
+    "destination_airport": "ESC"
+  },
+  {
+    "count": 75,
+    "destination_airport": "LWS"
+  },
+  {
+    "count": 75,
+    "destination_airport": "PIB"
+  },
+  {
+    "count": 75,
+    "destination_airport": "VEL"
+  },
+  {
+    "count": 75,
+    "destination_airport": "INL"
+  },
+  {
+    "count": 70,
+    "destination_airport": "STC"
+  },
+  {
+    "count": 70,
+    "destination_airport": "HOB"
+  },
+  {
+    "count": 69,
+    "destination_airport": "DVL"
+  },
+  {
+    "count": 51,
+    "destination_airport": "MMH"
+  },
+  {
+    "count": 44,
+    "destination_airport": "GUM"
+  },
+  {
+    "count": 44,
+    "destination_airport": "IAG"
+  },
+  {
+    "count": 43,
+    "destination_airport": "ADQ"
+  },
+  {
+    "count": 43,
+    "destination_airport": "PBG"
+  },
+  {
+    "count": 38,
+    "destination_airport": "MQT"
+  },
+  {
+    "count": 36,
+    "destination_airport": "ILG"
+  },
+  {
+    "count": 25,
+    "destination_airport": "OTH"
+  },
+  {
+    "count": 23,
+    "destination_airport": "UST"
+  },
+  {
+    "count": 21,
+    "destination_airport": "BGM"
+  },
+  {
+    "count": 14,
+    "destination_airport": "PPG"
+  },
+  {
+    "count": 13,
+    "destination_airport": "ADK"
+  }
+]
