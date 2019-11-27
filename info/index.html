@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Flight Project</title>
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -180,20 +181,21 @@ GROUP BY airline</code></pre>
 
     <footer>
         <hr/>
-        <a href="https://github.com/AlexP11223/D3FlightsDataVisualization">Source code</a>
+        <a href="https://github.com/walidcol/Flight-Data---Project-2-">Source code</a>
     </footer>
 </div>
 
 <script>
     async function makeMonthsPlot() {
         const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        const data = (await d3.json('data/months.json'))
+        const data = (await d3.json('../Data/months.json'))
             .map((it) => ({name: monthNames[it.month - 1], value: it.count}));
         const svg = d3.select('#monthsPlot');
         new BarChart(data, svg).draw();
     }
+
     async function makeDatesPlot() {
-        const data = (await d3.json('data/dates.json'))
+        const data = (await d3.json('../Data/dates.json'))
             .map((it) => ({date: new Date(Date.parse(it.date)), value: it.count}));
         const svg = d3.select('#datesPlot');
         new DatesLineChart(data, svg)
@@ -241,7 +243,7 @@ GROUP BY airline</code></pre>
         });
     }
     async function makeRoutesMap() {
-        const request1 = d3.json('data/airports.json');
+        const request1 = d3.json('../Data/airports.json');
         const request2 = d3.json('data/routes.json');
         const airports = await request1;
         const routes = await request2;
@@ -287,8 +289,8 @@ GROUP BY airline</code></pre>
         $('#chkDest').click(updateRoutes);
     }
     async function makeDelaysMap() {
-        const request1 = d3.json('data/airports.json');
-        const request2 = d3.json('data/airports_delays.json');
+        const request1 = d3.json('../Data/airports.json');
+        const request2 = d3.json('../Data/airports_delays.json');
         const airports = await request1;
         const delays = await request2;
         const map = L.map('delaysMap').setView([37.8, -96.9], 5);
@@ -320,7 +322,7 @@ GROUP BY airline</code></pre>
         });
     }
     async function makeAirlinesDelaysPlot() {
-        const data = (await d3.json('airlines_delays.json'))
+        const data = (await d3.json('../Data/airlines_delays.json'))
             .map(it => ({name: it.airline, value: it.delay_rate * 100, size: it.flights_count}));
         const svg = d3.select('#airlinesDelaysPlot');
         const width = Number(svg.attr('width'));
@@ -355,6 +357,8 @@ GROUP BY airline</code></pre>
         svg.append('g').call(xAxis);
         svg.append('g').call(yAxis);
     }
+
+
 </script>
 
 
@@ -366,10 +370,14 @@ GROUP BY airline</code></pre>
   <div id="footer">
     <p>Aziz Emil Walid&copy;2019</p>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-  <script src="http://d3js.org/d3.v4.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
-
+  <script>
+    makeMonthsPlot();
+    makeDatesPlot();
+    makeRoutesMap();
+    makeDelaysMap();
+    makeAirlinesDelaysPlot();
+  </script>
 </body>
 
 </html>
