@@ -1,0 +1,379 @@
+DESTINATION_AIRPORT,COUNTS
+ATL,41995
+ORD,33392
+DFW,32765
+LAX,24462
+DEN,24022
+IAH,18985
+PHX,18536
+SFO,18159
+LAS,16419
+MCO,14167
+LGA,13671
+DTW,13514
+CLT,13188
+MSP,12782
+BOS,12646
+EWR,12388
+SLC,12189
+JFK,11929
+SEA,11917
+FLL,10120
+BWI,9744
+DCA,9584
+MDW,9558
+MIA,9420
+SAN,8576
+TPA,8435
+PHL,8194
+DAL,7329
+HOU,6602
+BNA,5799
+STL,5786
+HNL,5467
+OAK,5145
+PDX,5112
+IAD,5110
+AUS,4777
+MSY,4757
+SJC,4741
+SMF,4572
+MCI,4566
+SNA,4527
+RSW,4407
+CLE,4300
+RDU,3868
+MKE,3651
+SAT,3650
+PBI,3412
+SJU,3219
+IND,2968
+PIT,2955
+CMH,2926
+OGG,2699
+CVG,2434
+BUR,2412
+BDL,2341
+ONT,2243
+ABQ,2196
+OMA,2185
+JAX,2103
+TUS,2047
+OKC,1948
+TUL,1842
+BUF,1827
+RIC,1802
+MEM,1751
+ANC,1640
+BHM,1631
+PSP,1550
+RNO,1532
+ELP,1528
+GRR,1482
+PVD,1408
+KOA,1397
+LIH,1343
+SDF,1342
+BOI,1328
+CHS,1301
+LIT,1285
+ORF,1215
+DSM,1200
+GEG,1179
+MSN,1172
+MAF,1168
+DAY,1120
+XNA,1093
+LGB,1080
+HPN,1043
+GSO,978
+FAT,963
+ICT,947
+CID,946
+BTR,933
+JAN,896
+PNS,883
+ASE,880
+FSD,869
+ROC,856
+SAV,851
+TYS,849
+COS,845
+SGF,838
+ALB,797
+SBA,791
+CAK,790
+CRP,781
+SHV,778
+GSP,771
+CAE,755
+AMA,745
+ITO,715
+LEX,706
+LFT,697
+FAR,679
+LBB,671
+STT,661
+MHT,660
+SYR,654
+MOB,626
+MLI,610
+HSV,597
+SBP,592
+SBN,555
+GRK,552
+FNT,549
+VPS,540
+ISP,527
+MFE,527
+GRB,523
+PIA,514
+JAC,485
+ACY,479
+GPT,476
+TLH,467
+EUG,458
+CHA,454
+BIS,446
+MRY,446
+EVV,444
+SRQ,444
+FWA,430
+JNU,427
+EGE,418
+MDT,418
+HRL,405
+MGM,401
+AEX,400
+MYR,384
+GJT,383
+ISN,364
+BMI,356
+MLU,356
+BZN,340
+EYW,337
+ABI,337
+TTN,335
+ECP,329
+BTV,324
+BFL,323
+GNV,320
+PWM,319
+ATW,317
+BIL,312
+MFR,306
+LRD,295
+CMI,294
+AVL,293
+CLD,291
+CLL,290
+AZO,290
+BRO,287
+CHO,287
+RAP,286
+FSM,283
+AGS,281
+LNK,280
+LAN,280
+RST,278
+TYR,274
+TVC,272
+DRO,266
+IDA,263
+KTN,263
+PSC,253
+CRW,250
+YUM,238
+MBS,238
+ELM,237
+MOT,237
+TRI,236
+MTJ,233
+RDM,232
+CPR,232
+ABE,227
+FAY,226
+DLH,219
+FAI,217
+LCH,215
+SJT,214
+MHK,213
+SGU,210
+ILM,209
+HDN,208
+ACT,208
+ACV,208
+FLG,203
+GTF,203
+ROA,202
+PHF,191
+SPI,182
+LAW,180
+FCA,179
+MSO,178
+COU,174
+LSE,172
+CWA,171
+ERI,170
+DAB,168
+MLB,167
+DHN,165
+SAF,164
+AVP,164
+OAJ,160
+GCC,158
+HLN,155
+DIK,155
+BQN,151
+SPS,148
+RKS,145
+SUN,136
+LBE,132
+BLI,132
+BPT,131
+SIT,131
+RDD,129
+TOL,126
+ROW,126
+TXK,126
+RHI,125
+STX,125
+VLD,123
+BQK,121
+DBQ,121
+GTR,120
+MEI,119
+BET,117
+ABY,117
+CSG,116
+BRW,113
+SCC,112
+HIB,111
+JMS,109
+GUC,104
+PSE,97
+SCE,92
+SWF,89
+WRG,88
+MKG,88
+ORH,88
+PSG,88
+BTM,88
+ABR,87
+JLN,87
+GCK,87
+COD,87
+TWF,87
+BJI,87
+EAU,87
+OTZ,87
+GRI,86
+EKO,86
+YAK,86
+OME,86
+CEC,86
+PIH,86
+CDV,86
+PAH,86
+CMX,85
+SMX,85
+LAR,84
+ALO,82
+SUX,82
+IMT,81
+GFK,81
+CIU,81
+EWN,80
+GGG,77
+BRD,77
+PUB,76
+CDC,76
+APN,76
+PLN,76
+HYS,76
+CNY,76
+PIB,75
+ESC,75
+INL,75
+LWS,75
+VEL,75
+STC,70
+HOB,70
+DVL,69
+MMH,51
+IAG,44
+GUM,44
+ADQ,43
+PBG,43
+MQT,38
+ILG,36
+OTH,25
+UST,23
+BGM,21
+PPG,14
+ADK,13
+Counts,"                                      DESTINATION_AIRPORT
+ATL                                                 41995
+ORD                                                 33392
+DFW                                                 32765
+LAX                                                 24462
+DEN                                                 24022
+IAH                                                 18985
+PHX                                                 18536
+SFO                                                 18159
+LAS                                                 16419
+MCO                                                 14167
+LGA                                                 13671
+DTW                                                 13514
+CLT                                                 13188
+MSP                                                 12782
+BOS                                                 12646
+EWR                                                 12388
+SLC                                                 12189
+JFK                                                 11929
+SEA                                                 11917
+FLL                                                 10120
+BWI                                                  9744
+DCA                                                  9584
+MDW                                                  9558
+MIA                                                  9420
+SAN                                                  8576
+TPA                                                  8435
+PHL                                                  8194
+DAL                                                  7329
+HOU                                                  6602
+BNA                                                  5799
+...                                                   ...
+EWN                                                    80
+GGG                                                    77
+BRD                                                    77
+PUB                                                    76
+CDC                                                    76
+APN                                                    76
+PLN                                                    76
+HYS                                                    76
+CNY                                                    76
+PIB                                                    75
+ESC                                                    75
+INL                                                    75
+LWS                                                    75
+VEL                                                    75
+STC                                                    70
+HOB                                                    70
+DVL                                                    69
+MMH                                                    51
+IAG                                                    44
+GUM                                                    44
+ADQ                                                    43
+PBG                                                    43
+MQT                                                    38
+ILG                                                    36
+OTH                                                    25
+UST                                                    23
+BGM                                                    21
+PPG                                                    14
+ADK                                                    13
+Counts       DESTINATION_AIRPORT
+ATL                41...
+
+[314 rows x 1 columns]"

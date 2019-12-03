@@ -13,8 +13,10 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="info/css/style.css">
-  <link rel="stylesheet" href="info/css/d3Style.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="charts.js"></script>
+  <script type="text/javascript" src="utils.js"></script>
+   
 
 </head>
 
@@ -90,74 +92,11 @@ GROUP BY date</code></pre>
         Also it depends on day of the week: there is a huge drop of activity on Saturdays, probably related to business trips.
     </p>
 
-    <h1>The most active airports</h1>
-    Line width depends on number of flights.
-    <div class="row">
-        <div class="col-xl-8">
-            <div id="routesMap" style="width: 100%; height: 560px"></div>
-        </div>
-        <div class="col">
-            <h3>Select airport</h3>
-            <div class="form-check form-check-inline" data-toggle="tooltip" title="Outgoing routes from the selected airport">
-                <input class="form-check-input" type="checkbox" name="chkOrigin" id="chkOrigin" value="origin" checked>
-                <label class="form-check-label" for="chkOrigin">Origin</label>
-            </div>
-            <div class="form-check form-check-inline" data-toggle="tooltip" title="Incoming routes to the selected airport">
-                <input class="form-check-input" type="checkbox" name="chkDest" id="chkDest" value="dest">
-                <label class="form-check-label" for="chkDest">Destination</label>
-            </div>
-            <a href="javascript:void(0)" id="sortAirportsCode" class="sort-button" data-toggle="tooltip" title="Sort alphabetically"><i class="fas fa-sort-alpha-down"></i></a>
-            <a href="javascript:void(0)" id="sortAirportsValue" class="sort-button" data-toggle="tooltip" title="Sort by flights count"><i class="fas fa-sort-amount-down"></i></a>
-            <div class="list-group airport-list" id="airports" style="height: 500px; overflow-y: scroll">
-                <a href="javascript:void(0)" data-value="_ALL" class="list-group-item list-group-item-action active">
-                    <b>All</b>
-                </a>
-                <div class="airports-items">
 
-                </div>
-            </div>
-        </div>
-    </div>
+    <h1>Airports with mot flight destinations</h1>
 
-    <div class="code-spoiler">
-        <a data-toggle="collapse" role="button">SQL</a>
-        <div class="collapse">
-            <div class="card card-body code-panel">
-                <pre class="code"><code>SELECT origin_airport, destination_airport, count(*)
-FROM flights
-GROUP BY origin_airport, destination_airport</code></pre>
-            </div>
-        </div>
-    </div>
+    <svg id="airlinesDelaysPlot" class="plot" width="800" height="300"></svg>
 
-    <p>Most of the biggest airports (and flight destinations) are located near the east coast and in the south part of the west coast (LA, SF),
-        the same as US population density.</p>
-
-    <h1>Airports with the most/least delays</h1>
-    <p>Circle size represents airport size (number of flights) and opacity shows its' delay rate (counting only delays that were longer than 10 minutes).</p>
-    <p>This map uses bigger scale to reduce circle sizes and overlapping, however it's still present in some cases.</p>
-    <div class="row">
-        <div class="col-xl-12">
-            <div id="delaysMap" style="width: 100%; height: 700px"></div>
-        </div>
-    </div>
-
-    <div class="code-spoiler">
-        <a data-toggle="collapse" role="button">SQL</a>
-        <div class="collapse">
-            <div class="card card-body code-panel">
-                <pre class="code"><code>SELECT origin_airport,
-       ROUND(count(*) / (SELECT count(*) FROM flights WHERE origin_airport=f.origin_airport)::decimal, 4) as delay_rate,
-       (SELECT count(*) FROM flights WHERE origin_airport=f.origin_airport) as flights_count
-FROM flights as f
-WHERE departure_delay > 10
-GROUP BY origin_airport</code></pre>
-            </div>
-        </div>
-    </div>
-
-    <p>From this map we can see that most airports have at least 10% of delayed flights.</p>
-    <p>Also it looks like delays are more likely in smaller airports, such as 2 airports on Alaska with 45+%. All of the bigger airports do not have such high delay rate.</p>
 
     <h1>Airlines with the most/least delays</h1>
     <p>Circle size represents airline size (number of flights) and Y axis shows its' delay rate (counting only delays that were longer than 10 minutes).</p>
@@ -242,85 +181,7 @@ GROUP BY airline</code></pre>
             markersLayer.addLayer(L.polyline(pointList, {color: 'red', weight: weightScaler(route.count)}));
         });
     }
-    async function makeRoutesMap() {
-        const request1 = d3.json('../Data/airports.json');
-        const request2 = d3.json('data/routes.json');
-        const airports = await request1;
-        const routes = await request2;
-        Object.values(airports).forEach(airport => {
-            airport.incomingAirports = routes
-                .filter(route => route.destination_airport === airport.iata_code)
-                .map(route => ({ code: route.origin_airport, count: route.count }));
-            airport.outgoingAirports = routes
-                .filter(route => route.origin_airport === airport.iata_code)
-                .map(route => ({ code: route.destination_airport, count: route.count }));
-            airport.incomingFlightsCount = airport.incomingAirports.reduce((acc, it) => acc + it.count, 0);
-            airport.outgoingFlightsCount = airport.outgoingAirports.reduce((acc, it) => acc + it.count, 0);
-        });
-        showAirportsList(airports);
-        $('#sortAirportsCode').click(() => showAirportsList(airports, (a, b) => a.iata_code.localeCompare(b.iata_code)));
-        $('#sortAirportsValue').click(() => showAirportsList(airports, (a, b) => b.incomingFlightsCount - a.incomingFlightsCount));
-        const map = L.map('routesMap').setView([37.8, -96.9], 4);
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 10,
-            id: 'mapbox.streets',
-            accessToken: 'pk.eyJ1IjoiYWxleHAxMTIyMzMiLCJhIjoiY2ppMGw0YXB2MTVqNzNrbnk0ZHBobmZuMyJ9.abqJyDi5w6lF6P6ybfeZeQ'
-        }).addTo(map);
-        const markersLayer = new L.LayerGroup();
-        markersLayer.addTo(map);
-        drawRoutes(markersLayer, routes, airports);
-        const updateRoutes = () => {
-            const airportCode = $('#airports').find('a.active').data('value');
-            const showOrigin = $('#chkOrigin').prop('checked');
-            const showDest = $('#chkDest').prop('checked');
-            const selectedRoutes = airportCode === '_ALL' ? routes :
-                    routes.filter(route => (showOrigin && route.origin_airport === airportCode) ||
-                        (showDest && route.destination_airport === airportCode));
-            drawRoutes(markersLayer, selectedRoutes, airports);
-        };
-        $('#airports').on('click', 'a', e => {
-            const element = $(e.target).closest('a');
-            element.closest('.list-group').find('a.active').removeClass("active");
-            element.addClass("active").siblings();
-            updateRoutes();
-        });
-        $('#chkOrigin').click(updateRoutes);
-        $('#chkDest').click(updateRoutes);
-    }
-    async function makeDelaysMap() {
-        const request1 = d3.json('../Data/airports.json');
-        const request2 = d3.json('../Data/airports_delays.json');
-        const airports = await request1;
-        const delays = await request2;
-        const map = L.map('delaysMap').setView([37.8, -96.9], 5);
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 10,
-            id: 'mapbox.streets',
-            accessToken: 'pk.eyJ1IjoiYWxleHAxMTIyMzMiLCJhIjoiY2ppMGw0YXB2MTVqNzNrbnk0ZHBobmZuMyJ9.abqJyDi5w6lF6P6ybfeZeQ'
-        }).addTo(map);
-        const opacityScaler = d3.scaleLinear()
-            .domain([d3.min(delays, it => it.delay_rate), d3.max(delays, it => it.delay_rate)])
-            .range([0.05, 0.9]);
-        const sizeScaler = d3.scaleLinear()
-            .domain([0, d3.max(delays, it => it.flights_count)])
-            .range([20000, 90000]);
-        delays.sort((a, b) => b.flights_count - a.flights_count); // smaller circles must be on top to be clickable
-        delays.forEach(it => {
-            const airport = airports[it.origin_airport];
-            const point = [Number(airport.latitude), Number(airport.longitude)];
-            const circle = L.circle(point, {
-                fillColor: 'red',
-                fillOpacity: opacityScaler(it.delay_rate),
-                radius: sizeScaler(it.flights_count),
-                stroke: false
-            }).addTo(map);
-            circle.bindPopup(`${airport.iata_code}
-                    <p>${airport.airport}, ${airport.city}, ${airport.state}</p>
-                    <p><b>${round(it.delay_rate*100, 2)}%</b> delayed (<b>${Math.trunc(it.flights_count * it.delay_rate)}</b> of <b>${it.flights_count}</b> flights)`);
-        });
-    }
+    
     async function makeAirlinesDelaysPlot() {
         const data = (await d3.json('../Data/airlines_delays.json'))
             .map(it => ({name: it.airline, value: it.delay_rate * 100, size: it.flights_count}));
@@ -363,19 +224,14 @@ GROUP BY airline</code></pre>
 
 
 
-
-
-
   
   <div id="footer">
     <p>Aziz Emil Walid&copy;2019</p>
   </div>
-  <script type="text/javascript" src="js/app.js"></script>
+  
   <script>
     makeMonthsPlot();
     makeDatesPlot();
-    makeRoutesMap();
-    makeDelaysMap();
     makeAirlinesDelaysPlot();
   </script>
 </body>
